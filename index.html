@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Entrega CSS 2 - Felipe Ticiano</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header-grid">
+    <a class="brand" href="#">Felipe<span class="dot">.</span></a>
+    <nav class="menu" aria-label="Navegação principal">
+      <ul class="nav-list">
+        <li><a href="#">Início</a></li>
+        <li class="has-sub"><a href="#">Projetos</a>
+          <ul class="submenu" aria-label="Submenu de projetos">
+            <li><a href="#">Web</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">UI/UX</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menu">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main class="main container">
+  <section class="intro">
+    <h1>Entrega CSS 2 — Interface responsiva</h1>
+    <p>Design system, grid 12 colunas, componentes reutilizáveis, navegação acessível e responsiva.</p>
+  </section>
+
+  <section class="cards" id="cards" aria-label="Projetos">
+    <article class="card">
+      <img src="assets/images/placeholder.png" alt="Projeto 1">
+      <div class="card-body">
+        <h3>Projeto 1 <span class="badge">Web</span></h3>
+        <p>Descrição breve do projeto 1.</p>
+        <div class="card-actions">
+          <button class="btn btn-primary">Ver mais</button>
+          <button class="btn btn-outline" disabled aria-disabled="true">Código (em breve)</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/images/placeholder.png" alt="Projeto 2">
+      <div class="card-body">
+        <h3>Projeto 2 <span class="badge badge-secondary">UI Design</span></h3>
+        <p>Descrição breve do projeto 2.</p>
+        <div class="card-actions">
+          <button class="btn btn-primary">Ver mais</button>
+          <button class="btn btn-outline">Código</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/images/placeholder.png" alt="Projeto 3">
+      <div class="card-body">
+        <h3>Projeto 3 <span class="badge badge-success">Concluído</span></h3>
+        <p>Descrição breve do projeto 3.</p>
+        <div class="card-actions">
+          <button class="btn btn-primary">Ver mais</button>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contactTitle">
+    <h2 id="contactTitle">Contato</h2>
+    <form class="form" novalidate>
+      <div class="form-row">
+        <label for="name">Nome</label>
+        <input id="name" name="name" required minlength="2" placeholder="Seu nome">
+        <span class="form-error" aria-live="polite"></span>
+      </div>
+      <div class="form-row">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required placeholder="seu@exemplo.com">
+        <span class="form-error" aria-live="polite"></span>
+      </div>
+      <div class="form-row">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <span class="form-error" aria-live="polite"></span>
+      </div>
+      <div class="form-row form-actions">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+        <button class="btn btn-outline" type="reset">Limpar</button>
+        <button type="button" class="btn btn-ghost" id="openFeedback">Testar Modal</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 Felipe Ticiano — Análise e Desenvolvimento de Sistemas</p>
+  </div>
+</footer>
+
+<!-- Modal de feedback -->
+<div class="modal" id="modal" role="dialog" aria-hidden="true" aria-labelledby="modalTitle" aria-modal="true">
+  <div class="modal-content" role="document">
+    <button class="modal-close" id="closeModal" aria-label="Fechar modal">×</button>
+    <h3 id="modalTitle">Mensagem enviada</h3>
+    <p>Sua mensagem foi enviada com sucesso. Obrigado!</p>
+  </div>
+</div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
