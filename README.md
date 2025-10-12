@@ -78,7 +78,7 @@ entrega_css_2/
 - **GitHub Pages (publicação do projeto)**
 
 ---.  
-3. O projeto ficará acessível em:  
+3. O projeto ficará acessível em: https://felipeticiano.github.io/Entrega_css_2/
 
 
 ---
