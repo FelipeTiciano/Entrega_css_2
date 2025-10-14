@@ -53,22 +53,22 @@ Aplicar conceitos avançados de **CSS3** para transformar a estrutura HTML da pr
 
 ## 📁 Estrutura do Projeto
 entrega_css_2/
-│
-├── index.html
-├── README.md
-│
-├── css/
-│ └── styles.css
-│
-├── js/
-│ └── scripts.js
-│
-├── assets/
-│ └── images/
-│ └── placeholder.png
-│
-└── docs/
-└── relatorio.md
++ │
++ ├── index.html
++ ├── README.md
++ │
++ ├── css/
++ │ └── styles.css
++ │
++ ├── js/
++ │ └── scripts.js
++ │
++ ├── assets/
++ │ └── images/
++ │ └── placeholder.png
++ │
++ └── docs/
++ └── relatorio.md
 
 ## 🧰 Tecnologias Utilizadas
 - **HTML5**
